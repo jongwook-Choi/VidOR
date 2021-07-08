@@ -1,0 +1,12 @@
+_BASE_: "/media/ailab/96de7966-5f99-4f8f-81d0-35ddb1898e9f/jonghun_workspace/vidor_detectron/configs/Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "/media/ailab/96de7966-5f99-4f8f-81d0-35ddb1898e9f/jonghun_workspace/vidor_detectron/weights/pretrained_weight/model_final_f6e8b1.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 101
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+DATALOADER:
+  NUM_WORKERS: 0
+
